@@ -1,7 +1,7 @@
 <template>
   <NavbarComponent nombre-web="IntuitWeather"/>
   <div class="container">
-    <div class="sapo">
+    <div class="cont">
       <SearchEngine class=""/>
     </div>
   </div>
@@ -13,8 +13,8 @@
 </script>
 
 <style>
-  .sapo {
+  .cont {
     display: flex;
-    padding: 10px
+    padding: 10px;
   }
 </style>

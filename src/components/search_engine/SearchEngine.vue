@@ -13,7 +13,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div v-for="city in ciudades" :key="city.location.name" class="col-md-4 mb-4">
+                <div v-for="city in ciudades" :key="city.location.name" class="col-md-4 col-lg-4 col-xl-4 mb-4">
                     <div class="cartas"> <!-- Agregado el margen vertical (my-3) -->
                         <CardComponent :icon="city.current.weather_icons[0]" :ciudad="city.location.name"
                             :pais="city.location.country" :temperature="city.current.temperature"
@@ -26,7 +26,7 @@
 </template>
 
 <script setup>
-import { defineProps, ref } from 'vue';
+import { ref } from 'vue';
 import CardComponent from '../card/CardComponent.vue';
 
 let urlCiudad = (ciudad) => `http://api.weatherstack.com/forecast?access_key=2a64fa12c4f65875d6d3ea04326e0618&query=${ciudad}`
